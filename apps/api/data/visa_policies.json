@@ -1,0 +1,899 @@
+[
+    {
+        "id": "usa-h1b",
+        "country": "USA",
+        "country_code": "US",
+        "visa_type": "H-1B Specialty Occupation",
+        "category": "work",
+        "target_profile": [
+            "software engineer",
+            "data scientist",
+            "engineer",
+            "doctor",
+            "architect"
+        ],
+        "official_source": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "processing_time_months": 6,
+        "validity_years": 3,
+        "cost_usd": 4000,
+        "annual_quota": 85000,
+        "requirements": {
+            "education": "Bachelor's degree or higher in specialty field (or equivalent experience)",
+            "job_offer": "Required — employer must file petition",
+            "employer_sponsorship": true,
+            "work_experience_years": 0,
+            "language": "English proficiency generally required",
+            "salary_minimum_usd": 60000,
+            "other": "Subject to annual lottery cap; Premium processing available for $2805"
+        },
+        "rejection_risk_factors": [
+            "No employer sponsor identified",
+            "Degree not directly related to job specialty",
+            "Salary below prevailing wage level",
+            "Specialty occupation status not clearly established",
+            "Cap-exempt employer not available (universities are cap-exempt)"
+        ],
+        "eligibility_text": "Applicant must have a job offer in a specialty occupation requiring theoretical and practical application of a body of specialized knowledge. Must hold at least a bachelor's degree or equivalent in the specific specialty. Employer must be a US entity willing to file H-1B petition with USCIS. Subject to annual cap of 65,000 regular + 20,000 US Master's exemption. Selected via lottery if petitions exceed cap.",
+        "next_steps": [
+            "Find a sponsoring employer in the US",
+            "Employer files LCA with Department of Labor",
+            "Employer files I-129 petition with USCIS",
+            "Wait for lottery result (if cap-subject)",
+            "Attend visa interview at US consulate"
+        ],
+        "alternative_visas": [
+            "L-1A",
+            "O-1A",
+            "EB-1A",
+            "TN (Canada/Mexico only)"
+        ],
+        "tags": [
+            "work",
+            "tech",
+            "lottery",
+            "employer-sponsored",
+            "specialty"
+        ]
+    },
+    {
+        "id": "usa-o1a",
+        "country": "USA",
+        "country_code": "US",
+        "visa_type": "O-1A Extraordinary Ability",
+        "category": "work",
+        "target_profile": [
+            "researcher",
+            "scientist",
+            "tech founder",
+            "award winner",
+            "published author"
+        ],
+        "official_source": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/o-1-visa-individuals-with-extraordinary-ability-or-achievement",
+        "processing_time_months": 3,
+        "validity_years": 3,
+        "cost_usd": 3500,
+        "annual_quota": null,
+        "requirements": {
+            "education": "No specific degree required",
+            "job_offer": "Required",
+            "employer_sponsorship": true,
+            "work_experience_years": 0,
+            "language": null,
+            "salary_minimum_usd": null,
+            "other": "Must demonstrate extraordinary ability via awards, publications, high salary, media coverage, judging, critical role, or original contributions"
+        },
+        "rejection_risk_factors": [
+            "Insufficient evidence of extraordinary ability",
+            "Awards not nationally or internationally recognized",
+            "Publications not in major peer-reviewed journals",
+            "Critical role claim not well-documented"
+        ],
+        "eligibility_text": "For individuals with extraordinary ability in sciences, education, business, or athletics. Must meet 3 of 8 criteria: awards, membership in associations, published material, judging work, original contributions, scholarly articles, critical role at distinguished organization, or high salary. No annual cap — no lottery.",
+        "next_steps": [
+            "Document all achievements, awards, publications",
+            "Find US employer or agent willing to petition",
+            "Gather recommendation letters from experts",
+            "File I-129 with USCIS",
+            "No consular wait for cap like H-1B"
+        ],
+        "alternative_visas": [
+            "H-1B",
+            "EB-1A (green card)",
+            "NIW"
+        ],
+        "tags": [
+            "work",
+            "extraordinary",
+            "no-cap",
+            "no-lottery",
+            "research",
+            "startup"
+        ]
+    },
+    {
+        "id": "usa-f1",
+        "country": "USA",
+        "country_code": "US",
+        "visa_type": "F-1 Student Visa",
+        "category": "study",
+        "target_profile": [
+            "student",
+            "undergraduate",
+            "graduate",
+            "PhD candidate"
+        ],
+        "official_source": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "processing_time_months": 2,
+        "validity_years": 5,
+        "cost_usd": 510,
+        "annual_quota": null,
+        "requirements": {
+            "education": "High school diploma or equivalent for undergrad; Bachelor's for grad",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 0,
+            "language": "TOEFL/IELTS required",
+            "salary_minimum_usd": null,
+            "other": "Acceptance letter from SEVP-certified school, proof of financial support ($20,000-$60,000/year depending on school), I-20 form"
+        },
+        "rejection_risk_factors": [
+            "Insufficient proof of financial support",
+            "Weak ties to home country (visa officer doubts return)",
+            "Low academic record",
+            "Language test score below university requirement",
+            "Incomplete application"
+        ],
+        "eligibility_text": "Must be accepted at a SEVP-approved US school and receive Form I-20. Must prove sufficient financial resources for full tuition and living expenses. Must demonstrate strong ties to home country and intent to return after studies. Work authorization limited to on-campus and CPT/OPT.",
+        "next_steps": [
+            "Apply and get accepted to a US university",
+            "Receive I-20 from school's DSO",
+            "Pay SEVIS fee ($350)",
+            "Apply for F-1 visa at US embassy",
+            "Attend visa interview"
+        ],
+        "alternative_visas": [
+            "J-1 Exchange Visitor"
+        ],
+        "tags": [
+            "study",
+            "student",
+            "university",
+            "OPT-eligible"
+        ]
+    },
+    {
+        "id": "canada-express-entry",
+        "country": "Canada",
+        "country_code": "CA",
+        "visa_type": "Express Entry — Federal Skilled Worker",
+        "category": "immigration",
+        "target_profile": [
+            "software engineer",
+            "skilled worker",
+            "engineer",
+            "accountant",
+            "nurse"
+        ],
+        "official_source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html",
+        "processing_time_months": 6,
+        "validity_years": null,
+        "cost_usd": 1500,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Post-secondary degree or diploma (ECA required)",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 1,
+            "language": "CLB 7+ (IELTS 6.0+ each band)",
+            "salary_minimum_usd": null,
+            "other": "Minimum 67/100 FSW points. CRS score determines invitation. Recent draws: CRS 470-530 range."
+        },
+        "rejection_risk_factors": [
+            "CRS score below current cutoff (check latest draw)",
+            "Education not assessed by ICES/WES",
+            "Language score below CLB 7",
+            "Work experience not in NOC TEER 0, 1, 2, or 3",
+            "Provincial job offer could boost CRS significantly"
+        ],
+        "eligibility_text": "Points-based system using Comprehensive Ranking System (CRS). Scored on age (max 110), education (max 150), work experience (max 80), language (max 160), adaptability (max 100), and job offer (50/200 extra). Must meet minimum 67/100 FSW points. Invited through regular draws targeting specific NOC categories.",
+        "next_steps": [
+            "Take IELTS or CELPIP language test",
+            "Get Educational Credential Assessment (WES/ICES)",
+            "Create Express Entry profile",
+            "Calculate your CRS score",
+            "Wait for Invitation to Apply (ITA) draw",
+            "Submit PR application within 60 days of ITA"
+        ],
+        "alternative_visas": [
+            "Provincial Nominee Program",
+            "Canadian Experience Class",
+            "LMIA Work Permit"
+        ],
+        "tags": [
+            "PR",
+            "immigration",
+            "points-based",
+            "no-sponsor",
+            "family-friendly"
+        ]
+    },
+    {
+        "id": "canada-study",
+        "country": "Canada",
+        "country_code": "CA",
+        "visa_type": "Canadian Study Permit",
+        "category": "study",
+        "target_profile": [
+            "student",
+            "undergraduate",
+            "graduate"
+        ],
+        "official_source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+        "processing_time_months": 3,
+        "validity_years": 4,
+        "cost_usd": 150,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Secondary school completion",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 0,
+            "language": "IELTS 6.0+ / TOEFL 80+",
+            "salary_minimum_usd": null,
+            "other": "Acceptance letter from DLI, proof of CAD $10,000+ per year for living expenses, no criminal record"
+        },
+        "rejection_risk_factors": [
+            "Insufficient proof of funds",
+            "DLI not on approved list",
+            "Weak study plan / purpose statement",
+            "Previous visa refusal not explained"
+        ],
+        "eligibility_text": "Must be accepted by a Designated Learning Institution (DLI). Must show proof of financial support (tuition + CAD $10,000 living/year). Work up to 20 hrs/week on campus. PGWP after graduation leads directly to Express Entry pathway.",
+        "next_steps": [
+            "Apply to a DLI in Canada",
+            "Receive acceptance letter",
+            "Apply for study permit online or at embassy",
+            "Provide biometrics",
+            "Apply for PGWP after graduation for work rights"
+        ],
+        "alternative_visas": [
+            "Express Entry after graduation via PGWP"
+        ],
+        "tags": [
+            "study",
+            "PGWP",
+            "PR-pathway",
+            "affordable"
+        ]
+    },
+    {
+        "id": "uk-skilled-worker",
+        "country": "UK",
+        "country_code": "GB",
+        "visa_type": "Skilled Worker Visa",
+        "category": "work",
+        "target_profile": [
+            "software engineer",
+            "nurse",
+            "doctor",
+            "engineer",
+            "teacher"
+        ],
+        "official_source": "https://www.gov.uk/skilled-worker-visa",
+        "processing_time_months": 1,
+        "validity_years": 5,
+        "cost_usd": 2000,
+        "annual_quota": null,
+        "requirements": {
+            "education": "No specific degree, but role must be at required skill level",
+            "job_offer": "Required — from approved UK employer",
+            "employer_sponsorship": true,
+            "work_experience_years": 0,
+            "language": "English B1 level (IELTS 4.0+)",
+            "salary_minimum_usd": 38700,
+            "other": "Must score 70 points: job offer (20) + skill level (20) + English (10) + salary (20). Salary threshold is GBP 38,700 (or going rate for occupation, whichever higher)."
+        },
+        "rejection_risk_factors": [
+            "Employer not on Home Office sponsor register",
+            "Salary below threshold (GBP 38,700 as of 2024)",
+            "Role not at RQF Level 3+",
+            "English language not proven",
+            "Criminal record with sentence over 12 months"
+        ],
+        "eligibility_text": "Points-based visa requiring 70 points. Job offer from licensed sponsor (20pts), role at required skill level RQF 3+ (20pts), English language (10pts), salary at/above threshold (20pts). No annual quota. Fast processing (~3 weeks). ILR possible after 5 years.",
+        "next_steps": [
+            "Find UK employer on sponsor register",
+            "Receive Certificate of Sponsorship (CoS)",
+            "Apply online for Skilled Worker visa",
+            "Prove English language ability",
+            "Provide biometrics at visa centre"
+        ],
+        "alternative_visas": [
+            "Global Talent Visa",
+            "Graduate Visa (post-study)",
+            "High Potential Individual Visa"
+        ],
+        "tags": [
+            "work",
+            "points-based",
+            "fast",
+            "ILR-pathway",
+            "NHS"
+        ]
+    },
+    {
+        "id": "uk-graduate",
+        "country": "UK",
+        "country_code": "GB",
+        "visa_type": "UK Graduate Visa",
+        "category": "post-study",
+        "target_profile": [
+            "international student",
+            "graduate",
+            "university graduate"
+        ],
+        "official_source": "https://www.gov.uk/graduate-visa",
+        "processing_time_months": 1,
+        "validity_years": 2,
+        "cost_usd": 800,
+        "annual_quota": null,
+        "requirements": {
+            "education": "UK Bachelor's, Master's or PhD from approved provider",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 0,
+            "language": "Already proven via Student visa",
+            "salary_minimum_usd": null,
+            "other": "Must have studied in UK on Student visa for full course duration. PhD graduates get 3 years instead of 2."
+        },
+        "rejection_risk_factors": [
+            "University not on approved list",
+            "Didn't complete full course in UK",
+            "Previous immigration violations"
+        ],
+        "eligibility_text": "2-year (3 for PhD) open work visa for UK university graduates. No job offer needed. No salary threshold. Work in any role, switch to Skilled Worker without leaving UK. Highly valued by international students as stepping stone to ILR.",
+        "next_steps": [
+            "Graduate from approved UK university",
+            "Apply within 2 years of graduation",
+            "No job offer needed — work freely",
+            "Find sponsored role to switch to Skilled Worker"
+        ],
+        "alternative_visas": [
+            "Skilled Worker Visa"
+        ],
+        "tags": [
+            "post-study",
+            "no-sponsor",
+            "flexible",
+            "UK-graduates"
+        ]
+    },
+    {
+        "id": "germany-job-seeker",
+        "country": "Germany",
+        "country_code": "DE",
+        "visa_type": "Job Seeker Visa",
+        "category": "work",
+        "target_profile": [
+            "engineer",
+            "software developer",
+            "IT professional",
+            "skilled worker"
+        ],
+        "official_source": "https://www.make-it-in-germany.com/en/visa-residence/types/job-seeking",
+        "processing_time_months": 2,
+        "validity_years": 0.5,
+        "cost_usd": 80,
+        "annual_quota": null,
+        "requirements": {
+            "education": "German-recognized university degree or vocational qualification",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 0,
+            "language": "German A1+ (B2 preferred); English for IT roles",
+            "salary_minimum_usd": null,
+            "other": "Must show proof of ~EUR 5,000 for living costs during 6-month search period. Cannot work during this visa — only job search."
+        },
+        "rejection_risk_factors": [
+            "Degree not recognized by Germany (use Anabin database)",
+            "Insufficient funds for 6-month stay",
+            "No clear job search plan",
+            "German language skills lacking (except IT sector)"
+        ],
+        "eligibility_text": "6-month visa to search for a job in Germany. Must hold a German-recognized degree. Upon finding a job, convert to EU Blue Card or work permit without leaving Germany. Germany has massive shortage of IT, engineering, and healthcare workers.",
+        "next_steps": [
+            "Get degree recognition via anabin.kmk.org",
+            "Open German bank account or show sufficient funds",
+            "Apply at German consulate in home country",
+            "Travel to Germany and actively job search",
+            "Convert to EU Blue Card once job is found"
+        ],
+        "alternative_visas": [
+            "EU Blue Card Germany",
+            "Skilled Immigration Act Visa"
+        ],
+        "tags": [
+            "work",
+            "job-search",
+            "no-sponsor-needed",
+            "IT-friendly",
+            "EU"
+        ]
+    },
+    {
+        "id": "germany-eu-blue-card",
+        "country": "Germany",
+        "country_code": "DE",
+        "visa_type": "EU Blue Card Germany",
+        "category": "work",
+        "target_profile": [
+            "software engineer",
+            "data scientist",
+            "engineer",
+            "doctor",
+            "university graduate"
+        ],
+        "official_source": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+        "processing_time_months": 2,
+        "validity_years": 4,
+        "cost_usd": 150,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Accredited university degree (4 years+)",
+            "job_offer": "Required",
+            "employer_sponsorship": true,
+            "work_experience_years": 0,
+            "language": "German B1 for PR; English sufficient for most IT roles",
+            "salary_minimum_usd": 50000,
+            "other": "Minimum gross salary: EUR 45,300 (2024); IT/engineering/math shortage occupations: EUR 41,041. PR possible in 21 months with B1 German."
+        },
+        "rejection_risk_factors": [
+            "Salary below minimum threshold",
+            "Degree not EU-recognized",
+            "Job not matching qualification"
+        ],
+        "eligibility_text": "EU-wide work permit for highly qualified non-EU nationals. Requires recognized degree and job offer meeting salary thresholds. PR (Niederlassungserlaubnis) possible in 21 months with B1 German or 33 months without. Family reunification within months. Path to German citizenship in 5-8 years.",
+        "next_steps": [
+            "Secure job offer with salary above threshold",
+            "Apply at German embassy or immigration office",
+            "Provide degree recognition",
+            "Arrive and register (Anmeldung) at local Bürgeramt",
+            "Start German language classes for faster PR"
+        ],
+        "alternative_visas": [
+            "Job Seeker Visa → EU Blue Card",
+            "Skilled Immigration Act Visa"
+        ],
+        "tags": [
+            "work",
+            "PR-fast",
+            "family-friendly",
+            "EU-Blue-Card",
+            "IT"
+        ]
+    },
+    {
+        "id": "australia-skilled-independent",
+        "country": "Australia",
+        "country_code": "AU",
+        "visa_type": "Skilled Independent Visa (Subclass 189)",
+        "category": "immigration",
+        "target_profile": [
+            "software engineer",
+            "nurse",
+            "accountant",
+            "engineer",
+            "cook"
+        ],
+        "official_source": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189",
+        "processing_time_months": 12,
+        "validity_years": null,
+        "cost_usd": 4640,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Skills assessment by relevant authority (e.g. ACS for IT)",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 3,
+            "language": "IELTS 6.0+ (Competent English)",
+            "salary_minimum_usd": null,
+            "other": "Points test: 65+ points. Under 45 years of age. Occupation on MLTSSL. Recent invitations: 85-90 points for competitive occupations."
+        },
+        "rejection_risk_factors": [
+            "Occupation not on Medium and Long-term Strategic Skills List",
+            "Points score below current invitation round",
+            "Skills assessment not approved (ACS for IT — often rejected)",
+            "Age over 45",
+            "English below Competent level"
+        ],
+        "eligibility_text": "Permanent residency visa with no employer or state sponsor required. Points scored on age (max 30 for 25-32), English (max 20), overseas experience (max 15), Australian experience (max 20), education (max 20), specialist education (max 10), and various bonuses. Must be invited via SkillSelect after submitting EOI.",
+        "next_steps": [
+            "Get skills assessed by the relevant authority",
+            "Take IELTS for Competent or higher English",
+            "Submit Expression of Interest (EOI) in SkillSelect",
+            "Receive invitation when points score is competitive",
+            "Apply for visa within 60 days of invitation"
+        ],
+        "alternative_visas": [
+            "Subclass 190 (State Nominated)",
+            "Subclass 491 (Regional)",
+            "TSS 482 Work Visa"
+        ],
+        "tags": [
+            "PR",
+            "no-sponsor",
+            "points-based",
+            "permanent"
+        ]
+    },
+    {
+        "id": "australia-student",
+        "country": "Australia",
+        "country_code": "AU",
+        "visa_type": "Student Visa (Subclass 500)",
+        "category": "study",
+        "target_profile": [
+            "student",
+            "undergraduate",
+            "graduate",
+            "international student"
+        ],
+        "official_source": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "processing_time_months": 1,
+        "validity_years": 5,
+        "cost_usd": 710,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Prior educational qualifications matching course level",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 0,
+            "language": "IELTS 5.5-6.5 depending on institution",
+            "salary_minimum_usd": null,
+            "other": "CoE from registered education provider, GTE requirement (Genuine Temporary Entrant), AUD 29,710+ in savings, OSHC insurance"
+        },
+        "rejection_risk_factors": [
+            "GTE statement unconvincing",
+            "Insufficient financial evidence",
+            "Course doesn't match academic background",
+            "Previous visa refusal unexplained"
+        ],
+        "eligibility_text": "Covers courses from primary school to PhD. Work rights: 48 hours/fortnight during term, unlimited during breaks. Graduates can apply for Temporary Graduate Visa (Subclass 485) — 2-6 years work rights depending on qualification and location.",
+        "next_steps": [
+            "Apply to registered Australian institution",
+            "Receive Confirmation of Enrolment (CoE)",
+            "Write Genuine Temporary Entrant statement",
+            "Apply online for subclass 500",
+            "Get OSHC insurance"
+        ],
+        "alternative_visas": [
+            "Temporary Graduate Visa 485 (after study)"
+        ],
+        "tags": [
+            "study",
+            "work-rights",
+            "PR-pathway-via-485"
+        ]
+    },
+    {
+        "id": "singapore-ep",
+        "country": "Singapore",
+        "country_code": "SG",
+        "visa_type": "Employment Pass (EP)",
+        "category": "work",
+        "target_profile": [
+            "software engineer",
+            "manager",
+            "executive",
+            "professional"
+        ],
+        "official_source": "https://www.mom.gov.sg/passes-and-permits/employment-pass",
+        "processing_time_months": 1,
+        "validity_years": 2,
+        "cost_usd": 200,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Degree from reputable university",
+            "job_offer": "Required",
+            "employer_sponsorship": true,
+            "work_experience_years": 0,
+            "language": "English",
+            "salary_minimum_usd": 5000,
+            "other": "Minimum SGD 5,000/month (higher for older/more experienced). Evaluated via COMPASS (Complementarity Assessment Framework) from 2023. Points on salary, qualifications, diversity, support for locals."
+        },
+        "rejection_risk_factors": [
+            "Salary below minimum (SGD 5,000/month)",
+            "COMPASS score below 40 points",
+            "Company workforce lacks local diversity",
+            "Degree not from well-ranked institution",
+            "Job description doesn't match qualifications"
+        ],
+        "eligibility_text": "For foreign professionals, managers, executives, and specialists. Evaluated using COMPASS scoring from Sep 2023. Points for: salary vs peers (0-20), qualifications (0-20), diversity (0-20), support for local employment (0-20), skills bonus (10-20). Minimum 40 points. PR possible after 2+ years.",
+        "next_steps": [
+            "Receive job offer from Singapore employer",
+            "Employer applies via EP Online",
+            "Approval typically in 3 weeks",
+            "Collect EP card after arrival",
+            "Apply for Dependant Pass for family"
+        ],
+        "alternative_visas": [
+            "S Pass (mid-skilled)",
+            "ONE Pass (top talent)",
+            "Tech.Pass"
+        ],
+        "tags": [
+            "work",
+            "Asia",
+            "tech-hub",
+            "fast-approval",
+            "PR-pathway"
+        ]
+    },
+    {
+        "id": "uae-golden-visa",
+        "country": "UAE",
+        "country_code": "AE",
+        "visa_type": "UAE Golden Visa (10-year)",
+        "category": "immigration",
+        "target_profile": [
+            "investor",
+            "entrepreneur",
+            "researcher",
+            "doctor",
+            "engineer",
+            "top graduate"
+        ],
+        "official_source": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/golden-visa",
+        "processing_time_months": 1,
+        "validity_years": 10,
+        "cost_usd": 2720,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Outstanding graduates from top-ranked universities (GPA 3.75+)",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 0,
+            "language": null,
+            "salary_minimum_usd": 12000,
+            "other": "Multiple pathways: (1) Investors: AED 2M real estate or AED 500K business; (2) Entrepreneurs: approved startup; (3) Specialized talent: doctors, engineers, scientists, artists; (4) Outstanding graduates; (5) Humanitarian workers"
+        },
+        "rejection_risk_factors": [
+            "Investment amount below threshold",
+            "University not ranked in top 500 globally",
+            "Insufficient documentation for specialty claim",
+            "Criminal record"
+        ],
+        "eligibility_text": "10-year renewable residency. No sponsor required after issuance. Sponsor your own family. No minimum stay requirement. Tax-free income. Multiple categories: investors (AED 2M property/AED 500K business), entrepreneurs, specialized talents (scientists, doctors, engineers, artists, athletes), outstanding students (top 5% or GPA 3.75+), humanitarian workers.",
+        "next_steps": [
+            "Identify which Golden Visa category you qualify for",
+            "Apply via ICP website or GDRFA",
+            "Medical examination",
+            "Emirates ID registration",
+            "Renew every 10 years"
+        ],
+        "alternative_visas": [
+            "UAE Green Visa (5-year self-sponsor)",
+            "UAE Freelancer Visa"
+        ],
+        "tags": [
+            "long-term",
+            "tax-free",
+            "no-sponsor",
+            "family",
+            "investor"
+        ]
+    },
+    {
+        "id": "netherlands-highly-skilled",
+        "country": "Netherlands",
+        "country_code": "NL",
+        "visa_type": "Highly Skilled Migrant Visa (Kennismigrant)",
+        "category": "work",
+        "target_profile": [
+            "software engineer",
+            "data scientist",
+            "researcher",
+            "tech professional"
+        ],
+        "official_source": "https://ind.nl/en/work/working_in_the_Netherlands/Pages/Highly-skilled-migrant.aspx",
+        "processing_time_months": 1,
+        "validity_years": 5,
+        "cost_usd": 350,
+        "annual_quota": null,
+        "requirements": {
+            "education": "No specific requirement but must meet salary threshold",
+            "job_offer": "Required — from IND-recognized sponsor",
+            "employer_sponsorship": true,
+            "work_experience_years": 0,
+            "language": "Dutch not required; English widely spoken",
+            "salary_minimum_usd": 60000,
+            "other": "Minimum gross monthly salary EUR 5,331 (under 30: EUR 3,909). Employer must be IND-recognized sponsor. 30% tax ruling (tax-free allowance) often available to expats."
+        },
+        "rejection_risk_factors": [
+            "Salary below threshold",
+            "Employer not IND-recognized sponsor",
+            "Degree not matching role"
+        ],
+        "eligibility_text": "Fast-track work permit for highly skilled workers. No quota. Processing in 2 weeks with recognized sponsor. 30% ruling saves significant income tax for first 5 years. After 5 years, apply for Dutch permanent residence (PR). Gateway to EU Blue Card and Schengen area freedom.",
+        "next_steps": [
+            "Find employer with IND recognition (most multinationals qualify)",
+            "Employer submits application to IND",
+            "MVV (entry visa) issued if needed",
+            "Collect residence permit at IND desk",
+            "Register at local municipality (BRP)"
+        ],
+        "alternative_visas": [
+            "EU Blue Card Netherlands",
+            "Startup Visa Netherlands",
+            "Orientation Year Visa (post-study)"
+        ],
+        "tags": [
+            "work",
+            "tech",
+            "30pct-ruling",
+            "EU",
+            "fast",
+            "no-quota"
+        ]
+    },
+    {
+        "id": "ireland-critical-skills",
+        "country": "Ireland",
+        "country_code": "IE",
+        "visa_type": "Critical Skills Employment Permit",
+        "category": "work",
+        "target_profile": [
+            "software engineer",
+            "data scientist",
+            "doctor",
+            "nurse",
+            "researcher"
+        ],
+        "official_source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "processing_time_months": 2,
+        "validity_years": 2,
+        "cost_usd": 1100,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Relevant degree for occupations on Critical Skills list",
+            "job_offer": "Required — EUR 38,000+ salary (EUR 32,000 for some shortage roles)",
+            "employer_sponsorship": true,
+            "work_experience_years": 0,
+            "language": "English",
+            "salary_minimum_usd": 42000,
+            "other": "Occupation must be on Critical Skills Occupations List. After 2 years: Stamp 4 (work without permit). After 5 years: Irish citizenship pathway."
+        },
+        "rejection_risk_factors": [
+            "Occupation not on Critical Skills list",
+            "Salary below EUR 38,000",
+            "Qualifications not recognized"
+        ],
+        "eligibility_text": "Fast-track permit for in-demand occupations. IT, engineering, healthcare, finance are all eligible. After 2 years, Stamp 4 allows work for any employer without permit. Spouse can work freely on Stamp 1G. Irish citizenship in 5 years. English-speaking, EU member, US tech hub.",
+        "next_steps": [
+            "Verify occupation on Critical Skills list",
+            "Secure job offer with qualifying salary",
+            "Employer applies for permit",
+            "Apply for entry visa (if required)",
+            "Register with GNIB on arrival"
+        ],
+        "alternative_visas": [
+            "General Employment Permit",
+            "Researcher Hosting Agreement"
+        ],
+        "tags": [
+            "work",
+            "EU",
+            "English-speaking",
+            "citizenship-pathway",
+            "IT",
+            "healthcare"
+        ]
+    },
+    {
+        "id": "sweden-work-permit",
+        "country": "Sweden",
+        "country_code": "SE",
+        "visa_type": "Swedish Work Permit",
+        "category": "work",
+        "target_profile": [
+            "software engineer",
+            "engineer",
+            "researcher",
+            "IT professional"
+        ],
+        "official_source": "https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden.html",
+        "processing_time_months": 3,
+        "validity_years": 2,
+        "cost_usd": 280,
+        "annual_quota": null,
+        "requirements": {
+            "education": "No formal requirement — job offer is primary criterion",
+            "job_offer": "Required",
+            "employer_sponsorship": true,
+            "work_experience_years": 0,
+            "language": "Swedish not required initially; English widely used in tech",
+            "salary_minimum_usd": 36000,
+            "other": "Salary must be equivalent to Swedish collective agreement (usually SEK 27,360+/month for IT). Union (fackförbund) must be offered opportunity to comment."
+        },
+        "rejection_risk_factors": [
+            "Salary below collective agreement level",
+            "Union objection to application",
+            "Position not genuinely available",
+            "Employer not paying social contributions"
+        ],
+        "eligibility_text": "Sweden's employer-sponsored work permit is one of Europe's most open systems — no quota, no skills list requirement, any occupation. Employer must offer terms matching Swedish collective agreements. After 4 years, permanent residency. Strong social benefits, family included.",
+        "next_steps": [
+            "Get a job offer from a Swedish employer",
+            "Employer advertises role to EU workers first (2 weeks)",
+            "Apply at Migrationsverket online",
+            "Decision in 2-4 months",
+            "Collect residence permit card in Sweden"
+        ],
+        "alternative_visas": [
+            "EU Blue Card Sweden",
+            "Self-employment permit"
+        ],
+        "tags": [
+            "work",
+            "EU",
+            "no-quota",
+            "no-skills-list",
+            "progressive",
+            "family"
+        ]
+    },
+    {
+        "id": "new-zealand-skilled-migrant",
+        "country": "New Zealand",
+        "country_code": "NZ",
+        "visa_type": "Skilled Migrant Category Resident Visa",
+        "category": "immigration",
+        "target_profile": [
+            "engineer",
+            "nurse",
+            "software developer",
+            "chef",
+            "teacher"
+        ],
+        "official_source": "https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/about-visa/skilled-migrant-category-resident-visa",
+        "processing_time_months": 12,
+        "validity_years": null,
+        "cost_usd": 2900,
+        "annual_quota": null,
+        "requirements": {
+            "education": "Recognized qualification (assessed by NZQA if non-NZ)",
+            "job_offer": false,
+            "employer_sponsorship": false,
+            "work_experience_years": 2,
+            "language": "IELTS 6.5+ / English-speaking country background",
+            "salary_minimum_usd": null,
+            "other": "Points-based EOI. 160+ points invited. Points for: skilled employment in NZ (max 50), skilled employment offer (max 50), qualifications (max 70), work experience (max 30), age (max 30). Under 56 years old."
+        },
+        "rejection_risk_factors": [
+            "Points score below 160",
+            "Age over 56 at time of application",
+            "Qualification not recognized by NZQA",
+            "Health requirements not met",
+            "Character requirements not met"
+        ],
+        "eligibility_text": "Permanent residency via points-based system. Best if you have or can get a skilled NZ job offer — it's the biggest points booster. NZ Work Visa for 1-3 years is the typical pathway to get that offer first. Small, safe, English-speaking. Rural/regional bonus points available.",
+        "next_steps": [
+            "Calculate your points at immigration.govt.nz",
+            "Consider NZ Work Visa first to gain local experience",
+            "Submit EOI when 160+ points achievable",
+            "Receive invitation to apply",
+            "Lodge resident visa application"
+        ],
+        "alternative_visas": [
+            "Accredited Employer Work Visa (AEWV)",
+            "Green List Residence Pathway"
+        ],
+        "tags": [
+            "PR",
+            "English-speaking",
+            "small",
+            "lifestyle",
+            "points-based"
+        ]
+    }
+]
