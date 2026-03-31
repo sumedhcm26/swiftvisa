@@ -1,18 +1,16 @@
 """
-In-memory vector store using sentence-transformers (free, local).
-No API key needed. Runs on CPU.
+Lightweight in-memory vector store using TF-IDF (scikit-learn).
+No heavy ML models, no PyTorch — fits in Render free tier (512MB).
 """
-import json
 import numpy as np
 from pathlib import Path
-from sentence_transformers import SentenceTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from rank_bm25 import BM25Okapi
 from typing import List, Dict, Any, Tuple
 import threading
 
 DATA_PATH = Path(__file__).parent.parent / "data" / "visa_policies.json"
-MODEL_NAME = "all-MiniLM-L6-v2"  # 80MB, free, fast, good quality
 
 
 class VectorStore:
@@ -29,12 +27,19 @@ class VectorStore:
     def initialize(self, policies: List[Dict]):
         if self._initialized:
             return
-        print("🔧 Loading embedding model (first run downloads ~80MB)...")
-        self.model = SentenceTransformer(MODEL_NAME)
+        print("🔧 Building TF-IDF index (lightweight, no downloads)...")
         self.policies = policies
         self.corpus_texts = [self._policy_to_text(p) for p in policies]
-        print("🧮 Generating embeddings...")
-        self.embeddings = self.model.encode(self.corpus_texts, show_progress_bar=False)
+
+        # TF-IDF vectorizer — lightweight replacement for sentence-transformers
+        self.tfidf = TfidfVectorizer(
+            stop_words="english",
+            ngram_range=(1, 2),
+            max_features=10000,
+        )
+        self.tfidf_matrix = self.tfidf.fit_transform(self.corpus_texts)
+
+        # BM25 for keyword search
         tokenized = [t.lower().split() for t in self.corpus_texts]
         self.bm25 = BM25Okapi(tokenized)
         self._initialized = True
@@ -63,7 +68,7 @@ class VectorStore:
 
         policies = self.policies
         corpus_texts = self.corpus_texts
-        embeddings = self.embeddings
+        tfidf_matrix = self.tfidf_matrix
 
         if country_filter:
             indices = [i for i, p in enumerate(self.policies)
@@ -72,11 +77,11 @@ class VectorStore:
             if indices:
                 policies = [self.policies[i] for i in indices]
                 corpus_texts = [self.corpus_texts[i] for i in indices]
-                embeddings = self.embeddings[indices]
+                tfidf_matrix = self.tfidf_matrix[indices]
 
-        # Dense vector search
-        q_emb = self.model.encode([query])
-        dense_scores = cosine_similarity(q_emb, embeddings)[0]
+        # TF-IDF cosine similarity (replaces dense neural embeddings)
+        q_vec = self.tfidf.transform([query])
+        dense_scores = cosine_similarity(q_vec, tfidf_matrix)[0]
 
         # BM25 keyword search
         tokenized = [t.lower().split() for t in corpus_texts]
@@ -86,8 +91,8 @@ class VectorStore:
         max_bm25 = bm25_scores_raw.max() if bm25_scores_raw.max() > 0 else 1
         bm25_scores = bm25_scores_raw / max_bm25
 
-        # Reciprocal Rank Fusion (RRF)
-        alpha = 0.6  # weight for dense
+        # Hybrid fusion
+        alpha = 0.5  # equal weight — TF-IDF + BM25 complement each other well
         combined = alpha * dense_scores + (1 - alpha) * bm25_scores
 
         ranked_indices = np.argsort(combined)[::-1][:top_k]
