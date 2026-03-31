@@ -24,7 +24,7 @@ async def compare(request: CompareRequest):
         if len(countries_policies) < 2:
             raise HTTPException(status_code=400, detail="Could not find policies for enough countries")
 
-        result = compare_countries(profile.model_dump(), countries_policies)
+        result = compare_countries(profile.dict(), countries_policies)
         return {"success": True, "data": result}
     except HTTPException:
         raise

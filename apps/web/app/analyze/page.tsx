@@ -25,10 +25,10 @@ export default function AnalyzePage() {
         current_country: p.current_country || "India",
         target_country: p.target_country || "Canada",
         age: Number(p.age) || 22,
-        education_level: p.education_level || p.education || "Bachelors",
+        education_level: p.education_level || (p as any).education || "Bachelors",
         field_of_study: p.field_of_study || "Computer Science",
         work_experience_years: Number(
-          p.work_experience_years || p.experience || 0,
+          p.work_experience_years || (p as any).experience || 0,
         ),
         current_job_title: p.current_job_title || "Student",
         annual_salary_usd: Number(p.annual_salary_usd || 0),

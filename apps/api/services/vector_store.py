@@ -94,7 +94,7 @@ class VectorStore:
         results = [(policies[i], float(combined[i])) for i in ranked_indices]
         return results
 
-    def get_policy_by_id(self, policy_id: str) -> Dict | None:
+    def get_policy_by_id(self, policy_id: str) -> Any:
         for p in self.policies:
             if p.get("id") == policy_id:
                 return p

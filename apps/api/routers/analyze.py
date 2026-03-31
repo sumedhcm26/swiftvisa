@@ -26,7 +26,7 @@ async def analyze(request: AnalyzeRequest):
         if not results:
             results = vector_store.hybrid_search(query=query, top_k=5)
 
-        profile_dict = profile.model_dump()
+        profile_dict = profile.dict()
         analysis = analyze_eligibility(profile_dict, results)
 
         top_policies = [p for p, _ in results]

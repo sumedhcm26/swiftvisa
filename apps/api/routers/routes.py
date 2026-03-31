@@ -18,7 +18,7 @@ async def get_routes(request: RouteRequest):
             policies = [p for p, _ in results]
 
         result = plan_migration_route(
-            profile.model_dump(), request.target_country, policies
+            profile.dict(), request.target_country, policies
         )
         return {"success": True, "data": result}
     except Exception as e:

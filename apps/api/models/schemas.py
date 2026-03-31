@@ -27,7 +27,7 @@ class AnalyzeRequest(BaseModel):
 
 class CompareRequest(BaseModel):
     profile: UserProfile
-    countries: List[str] = Field(..., min_length=2, max_length=6)
+    countries: List[str] = Field(..., min_items=2, max_items=6)
 
 
 class RouteRequest(BaseModel):

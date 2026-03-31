@@ -182,7 +182,7 @@ def generate_pdf(profile: dict, analysis: dict) -> BytesIO:
 @router.post("")
 async def generate_report(request: ReportRequest):
     try:
-        pdf_buffer = generate_pdf(request.profile.model_dump(), request.analysis_result)
+        pdf_buffer = generate_pdf(request.profile.dict(), request.analysis_result)
         filename = f"swiftvisa_report_{request.profile.nationality}_{request.profile.target_country}.pdf"
         return StreamingResponse(
             pdf_buffer,

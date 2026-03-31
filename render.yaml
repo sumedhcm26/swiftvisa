@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: swiftvisa-api
+    runtime: python
+    rootDir: apps/api
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: llama3-70b-8192
+      - key: APP_ENV
+        value: production
+      - key: PORT
+        value: "10000"
+      - key: PYTHON_VERSION
+        value: "3.10.13"
